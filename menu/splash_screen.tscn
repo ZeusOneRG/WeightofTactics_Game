@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cobwg8bl3u51w"]
+
+[ext_resource type="Script" uid="uid://vqip0vom8770" path="res://menu/splash_screen.gd" id="1_hsxvm"]
+[ext_resource type="Texture2D" uid="uid://xmb27gwc5byw" path="res://menu/logo_gamestudio_background.png" id="1_n4g2v"]
+
+[node name="SplashScreen" type="Control" unique_id=998193053]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_hsxvm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1521806668]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_n4g2v")
+stretch_mode = 6
+
+[node name="Timer" type="Timer" parent="." unique_id=426710366]
+wait_time = 3.0
+one_shot = true
+autostart = true

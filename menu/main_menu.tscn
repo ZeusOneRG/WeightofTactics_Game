@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://bfp1eekrf7ej2"]
+
+[ext_resource type="Script" uid="uid://bk6u16yd6u2g7" path="res://menu/main_menu.gd" id="1_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://cx0vpvdymwwi4" path="res://menu/game_menu_tank_background.jpg" id="2_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://uaw6licgjd6d" path="res://menu/button_01_01_login.png" id="2_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://kqk7vmwey6al" path="res://menu/button_01_02_login.png" id="3_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://drvf80ftccyuv" path="res://menu/wot_game_logo01.png" id="3_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://fvkwi5qlgqrw" path="res://menu/button_02_01_opciones.png" id="4_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://dsip3maif8ml4" path="res://menu/button_02_02_opciones.png" id="5_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://dm8ohiwkd4ml0" path="res://menu/button_03_01_salir.png" id="6_flqon"]
+[ext_resource type="Texture2D" uid="uid://cia1h6j1g75ds" path="res://menu/button_03_02_salir.png" id="7_rcqid"]
+[ext_resource type="AudioStream" uid="uid://dawda2tphdpyw" path="res://menu/galaxy_strike_menu_audio.mp3" id="9_jk1qb"]
+[ext_resource type="AudioStream" uid="uid://bf3hgaw3hkro7" path="res://menu/galaxy_strike_main_menu_button.mp3" id="11_lgwnu"]
+
+[node name="MainMenu" type="Control" unique_id=546560288]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+script = ExtResource("1_5dd4i")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=622915179]
+z_index = -1
+custom_minimum_size = Vector2(1920, 1080)
+custom_maximum_size = Vector2(1920, 1080)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.9999999)
+texture = ExtResource("2_lgwnu")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1593972310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=648998516]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer2" unique_id=66224682]
+custom_minimum_size = Vector2(600, 400)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("3_lgwnu")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=186868954]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="NewGameBtn" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=944265178]
+custom_minimum_size = Vector2(290, 220)
+layout_mode = 2
+mouse_filter = 1
+texture_normal = ExtResource("2_tbmy8")
+texture_hover = ExtResource("3_jk1qb")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SettingsBtn" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1519195820]
+custom_minimum_size = Vector2(290, 200)
+layout_mode = 2
+mouse_filter = 1
+texture_normal = ExtResource("4_5dd4i")
+texture_hover = ExtResource("5_lgwnu")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ExitBtn" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=406458897]
+custom_minimum_size = Vector2(290, 220)
+layout_mode = 2
+texture_normal = ExtResource("6_flqon")
+texture_hover = ExtResource("7_rcqid")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1405536672]
+stream = ExtResource("9_jk1qb")
+autoplay = true
+parameters/looping = true
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1912014043]
+stream = ExtResource("11_lgwnu")

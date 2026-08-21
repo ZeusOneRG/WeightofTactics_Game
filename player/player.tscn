@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cd3whcr0ntqsg"]
+
+[ext_resource type="Script" uid="uid://byocniblku6qv" path="res://player/player.gd" id="1_g1dw6"]
+[ext_resource type="Texture2D" uid="uid://de5vfmkv4kt2w" path="res://player/tank_base01.png" id="1_rkbax"]
+[ext_resource type="Texture2D" uid="uid://ddpyq50iwv166" path="res://player/Tapa_tanque01.png" id="2_g1dw6"]
+
+[node name="Character" type="CharacterBody2D" unique_id=412702588]
+script = ExtResource("1_g1dw6")
+
+[node name="chassis" type="Sprite2D" parent="." unique_id=1039744745]
+texture = ExtResource("1_rkbax")
+
+[node name="turret_axis" type="Node2D" parent="." unique_id=1609795603]
+
+[node name="turret" type="Sprite2D" parent="turret_axis" unique_id=1281956104]
+position = Vector2(160, 0)
+rotation = 3.1415927
+texture = ExtResource("2_g1dw6")
