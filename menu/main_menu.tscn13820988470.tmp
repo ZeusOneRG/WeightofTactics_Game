@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bfp1eekrf7ej2"]
 
 [ext_resource type="Script" uid="uid://bk6u16yd6u2g7" path="res://menu/main_menu.gd" id="1_5dd4i"]
-[ext_resource type="Texture2D" uid="uid://cx0vpvdymwwi4" path="res://menu/game_menu_tank_background.jpg" id="2_8qj3r"]
+[ext_resource type="Texture2D" uid="uid://hf1elke2hf4o" path="res://menu/game_ui_mainmenu_background.png" id="2_k5y3h"]
 [ext_resource type="Texture2D" uid="uid://bciybglmcsfnl" path="res://menu/wot_title02.png" id="5_youj7"]
 [ext_resource type="Texture2D" uid="uid://btvax3yx1kocg" path="res://menu/wot_b_newgame01.png" id="6_k5y3h"]
 [ext_resource type="Texture2D" uid="uid://72fa27ign7e8" path="res://menu/wot_b_loadgame01.png" id="7_youj7"]
@@ -12,7 +12,6 @@
 [ext_resource type="AudioStream" uid="uid://bf3hgaw3hkro7" path="res://menu/galaxy_strike_main_menu_button.mp3" id="11_lgwnu"]
 
 [node name="MainMenu" type="Control" unique_id=546560288]
-process_mode = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -35,17 +34,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1, 0.9999999)
-texture = ExtResource("2_8qj3r")
+texture = ExtResource("2_k5y3h")
 expand_mode = 1
 
-[node name="menu_music" type="AudioStreamPlayer2D" parent="." unique_id=1405536672]
-unique_name_in_owner = true
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1405536672]
 stream = ExtResource("9_jk1qb")
 autoplay = true
 parameters/looping = true
 
-[node name="btn_effect" type="AudioStreamPlayer2D" parent="." unique_id=1912014043]
-unique_name_in_owner = true
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1912014043]
 stream = ExtResource("11_lgwnu")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=64454301]
