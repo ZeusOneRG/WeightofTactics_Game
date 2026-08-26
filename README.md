@@ -9,7 +9,7 @@ Since this project focuses purely on learning with a short and well-defined scop
 
 ---
 
-## 🚀 Key Features in development:
+## Key Features in development:
 
 *   **Modernized Top-Down Style:** Arcade-style gameplay inspired by 8-bit classics, but upgraded with a modern visual style and user interface.
 *   **2-Player Local Multiplayer:** Built specifically for shared-screen local co-op play.
@@ -18,7 +18,7 @@ Since this project focuses purely on learning with a short and well-defined scop
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 *   **Game Engine:** Godot Engine (GDScript)
 *   **Perspective:** 2D Top-Down
@@ -26,7 +26,7 @@ Since this project focuses purely on learning with a short and well-defined scop
 
 ---
 
-## 🎮 Controls (Local)
+## Controls (Local)
 
 The game is configured to be played on a single keyboard or using a keyboard and controller setup:
 
@@ -38,7 +38,7 @@ The game is configured to be played on a single keyboard or using a keyboard and
 
 ---
 
-## ⚙️ How to Run the Project
+## How to Run the Project
 
 To test the prototype or review the source code in Godot:
 
